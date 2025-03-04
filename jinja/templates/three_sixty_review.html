@@ -1,0 +1,10 @@
+{% extends "pdf.html" %}
+{% block corners %}
+    {% include 'partials/display_corners.html' %}
+{% endblock %}
+{% block content %}
+    {# find expected comment fields #}
+    {% include 'partials/display_heading.html' %}
+    {% include 'partials/display_chart.html' %}
+    {% include 'partials/display_comments.html' %}
+{% endblock %}

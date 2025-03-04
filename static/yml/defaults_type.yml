@@ -1,0 +1,14 @@
+## what type of feedback is this running
+type_options:
+  marks:
+    label: "Feedback Marks"
+    config: "feedback_marks.yml"
+  tmc:
+    label: "Feedback TMC"
+    config: "feedback_tmc.yml"
+  json:
+    label: "Make JSON"
+    config: "out_json.yml"
+  wattle:
+    label: "Make Wattle CSV"
+    config: "out_wattle.yml"

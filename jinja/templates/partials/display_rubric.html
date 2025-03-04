@@ -1,0 +1,19 @@
+<table class="rubric">
+<tr>
+<th>Criteria</th>
+{% for level in variables['levels'] %}
+    {% if level['display'] == 'show' %}
+        <th>{{ level['label'] }}</th>
+    {% endif %}
+{% endfor %}
+</tr>
+
+{% for crit in rubric %}
+    <tr>
+        <th>{{ crit['label'] }}<br />
+            {{ crit['description'] }}<br/ >
+            ({{ crit['weight'] }})</th>
+        {% for row in crit['row'] %}
+            <td class="{{ row['background'] }}">{{ row['description'] }}</td>
+        {% endfor %}
+{% endfor %}

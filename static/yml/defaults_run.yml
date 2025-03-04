@@ -1,0 +1,59 @@
+run_config:
+  type:
+    type: "text"
+    label: 'Type'
+    default: "Type"
+    helper: ""
+  run_name:
+    type: "text"
+    label: 'Run Name'
+    default: "Year_Sem_AssignmentShort"
+    helper: ""
+  course:
+    type: "text"
+    label: 'Course'
+    default: "Course Name"
+    helper: ""
+  semester:
+    type: "select"
+    label: 'Semester'
+    default: "Semester X, 20XX"
+    helper: ""
+    options:
+      Summer 2021: "Summer, 2021"
+      Semester 1 2021: "Semester 1, 2021"
+      Winter 2021: "Winter, 2021"
+      Semester 2 2021: "Semester 2, 2021"
+      Summer 2022: "Summer, 2022"
+  assignment_title:
+    type: "text"
+    label: 'Assignment Title'
+    default: "Assignment Title"
+    helper: ""
+  assignment_short:
+    type: "text"
+    label: 'Short Title'
+    default: "Acronym"
+    helper: "Ensure no spaces in this name"
+  audience:
+    type: "select"
+    label: "Audience"
+    default: "anon"
+    helper: "Create anonymous/confidential versions"
+    options:
+      anon: "Anonymous"
+      conf: "Confidential"
+      both: "Anonymous and Confidential"
+  grouping:
+    type: "select"
+    label: "Grouping"
+    default: "individual"
+    helper: "Is this an individual or group/team activity"
+    options:
+      individial: "Individual"
+      team: "Team/Group"
+  feedback_url:
+    type: "text"
+    label: 'URL'
+    default: "https://eng.anu.edu.au/courses/engnfeedback/course/year/assignment"
+    helper: "Where the files will be uploaded"

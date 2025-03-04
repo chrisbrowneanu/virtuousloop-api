@@ -1,0 +1,15 @@
+html:
+  label: "Marks"
+  helper_text: "Create a marking report using a single file."
+  required_files: ["data_marks.csv"]
+
+# define the input csv files
+files:
+  - file: "data_marks.csv"
+    details:
+      - helper: "data_marks.csv should contain a list of marks, crits and comments from the wattle database"
+      - rename: {"username":"marker_id",
+              "user":"marker"}
+      - required: ["user", "list_name"]
+      - index: "user"
+      - expected: "crit"
