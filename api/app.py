@@ -5,8 +5,6 @@ from .errors import errors
 from .rubric import rubric
 from .three_sixty_review import three_sixty_review
 from .functions import functions
-from .td_course_list import td_course_list
-from .sete_sessions import sete_sessions
 
 # register app
 app = Flask(__name__,
@@ -15,8 +13,6 @@ app = Flask(__name__,
 app.register_blueprint(errors, flush=True)
 app.register_blueprint(rubric, flush=True)
 app.register_blueprint(three_sixty_review, flush=True)
-app.register_blueprint(td_course_list, flush=True, url_prefix='/td_courses')
-app.register_blueprint(sete_sessions, flush=True)
 app.register_blueprint(functions, flush=True)
 
 app.template_filter('svg2data_url')

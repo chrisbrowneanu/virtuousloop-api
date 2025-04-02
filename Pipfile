@@ -14,6 +14,7 @@ matplot = "*"
 matplotlib = "*"
 seaborn = "*"
 chardet = "*"
+pango = "*"
 
 [dev-packages]
 
